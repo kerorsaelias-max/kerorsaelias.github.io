@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elias Kerorsa - About Me</title>
+    <meta name="description" content="About Elias Kerorsa — education, skills, professional experience and interests.">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
+    <!-- Accessibility: allow keyboard users to skip repetitive navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Me</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="contact.html">Contact</a>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
         <hr>
     </header>
 
-    <main>
+    <main id="main-content">
         <h1>About Me</h1>
 
         <section id="education">
             <h2>Education Background</h2>
-            <p><strong>B.Sc. in Information Science (2022 - Present)</strong></p>
+            <p>
+                <strong>B.Sc. in Information Science</strong>
+                (<time datetime="2022">2022</time> - <time datetime="2025">Present</time>)
+            </p>
             <p>University of Gondar, College of Informatics</p>
-            <p>Relevant Coursework: Web Development (HTML/CSS/JS), Database Management, System Analysis and Design, Data Mining.</p>
+            <p>Relevant coursework: Web Development (HTML, CSS, JavaScript), Database Management, System Analysis and Design, Data Mining.</p>
         </section>
 
         <section id="experience">
             <h2>Professional Experience</h2>
-            <p><strong>Freelance Web Developer (Part-Time, 2024)</strong></p>
+            <p><strong>Freelance Web Developer (Part-Time, <time datetime="2024">2024</time>)</strong></p>
             <ul>
                 <li>Developed and maintained simple static websites for small local businesses.</li>
                 <li>Collaborated with clients to gather requirements and deliver projects on time.</li>
@@ -41,17 +50,17 @@
             <ul>
                 <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, Python</li>
                 <li><strong>Databases:</strong> MySQL, MongoDB</li>
-                <li><strong>Tools & Platforms:</strong> Git/GitHub, Visual Studio Code</li>
-                <li><strong>Soft Skills:</strong> Problem-Solving, Teamwork, Time Management</li>
+                <li><strong>Tools &amp; Platforms:</strong> Git, GitHub, Visual Studio Code</li>
+                <li><strong>Soft Skills:</strong> Problem solving, teamwork, time management</li>
             </ul>
         </section>
 
         <section id="hobbies">
-            <h2>Hobbies/Interests</h2>
+            <h2>Hobbies &amp; Interests</h2>
             <ul>
-                <li>Reading books on technology and leadership.</li>
-                <li>Playing chess and solving coding challenges.</li>
-                <li>Hiking and exploring nature.</li>
+                <li>Reading books on technology and leadership</li>
+                <li>Playing chess and solving coding challenges</li>
+                <li>Hiking and exploring nature</li>
             </ul>
         </section>
     </main>
@@ -59,8 +68,13 @@
     <footer>
         <hr>
         <p>&copy; 2025 Elias Kerorsa | All rights reserved.</p>
-        <p>Follow me on: <a href="https://linkedin.com/in/eliaskerorsa">LinkedIn</a> | <a href="https://github.com/eliaskerorsa">GitHub</a></p>
+        <p>
+            Follow me on:
+            |
+            <a href="https://github.com/kerorsaelias-max" target="_blank" rel="noopener noreferrer" aria-label="Elias Kerorsa on GitHub">GitHub</a>
+            |
+            <a href="mailto:kerorsaelias@gmail.com" aria-label="Email Elias Kerorsa">kerorsaelias@gmail.com</a>
+        </p>
     </footer>
-
 </body>
 </html>
